@@ -50,9 +50,9 @@ const ListBeer = () =>{
    // }) : beers
 
    return (
-      <div>
+      <div className="list-beer">
          <h1>List Beer</h1>
-         <form onSubmit={handleSearchSubmit}>
+         <form className="filter-beers"  onSubmit={handleSearchSubmit}>
             <label>Filter Beers</label>
             <input type='text' name="searchTerm" value={searchTerm} onChange = {(e)=> setSearchTerm(e.target.value)} />
             <button type='submit' >Search</button>
